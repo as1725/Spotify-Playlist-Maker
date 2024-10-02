@@ -118,8 +118,8 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Acknowledgements:
-[Flask](https://flask.palletsprojects.com/) - The web framework used
-[Spotify for Developers](https://developer.spotify.com/) - Spotify API documentation
+- [Flask](https://flask.palletsprojects.com/) - The web framework used
+- [Spotify for Developers](https://developer.spotify.com/) - Spotify API documentation
 
 ## Contact:
 For any questions or suggestions, please open an issue or contact the repository owner.
