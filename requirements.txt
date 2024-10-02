@@ -1,0 +1,3 @@
+Flask
+spotipy
+python-dotenv

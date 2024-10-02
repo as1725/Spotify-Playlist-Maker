@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Spotify Playlist Maker</title>
+		<link
+			rel="stylesheet"
+			href="{{ url_for('static', filename='css/styles.css') }}"
+		/>
+	</head>
+	<body>
+		<div id="user-info" class="user-info hidden">
+			Logged in as <span id="user-name"></span>
+			<button id="logout-button" class="hidden">Logout</button>
+		</div>
+		<div class="container">
+			<h1>Create Your Spotify Playlist</h1>
+			<div id="alert-container" class="hidden"></div>
+			<button id="login-button">Login with Spotify</button>
+			<div id="playlist-form" class="hidden">
+				<h2>Enter Song Details</h2>
+				<div id="input-fields"></div>
+				<button id="add-song">Add Another Song</button>
+				<h2>Or Enter Songs in Bulk</h2>
+				<textarea
+					id="bulk-songs"
+					placeholder="Enter songs separated by commas or newlines"
+				></textarea>
+				<input
+					type="text"
+					id="playlist-name"
+					placeholder="Enter playlist name"
+					required
+				/>
+				<button id="submit-playlist">Create Playlist</button>
+			</div>
+			<div id="playlist-link" class="hidden">
+				<h2>Your Playlist has been created!</h2>
+				<a id="link" href="" target="_blank">Go to Your Playlist</a>
+			</div>
+			<div id="loader" class="hidden">Creating Playlist...</div>
+		</div>
+
+		<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+	</body>
+</html>
